@@ -1,6 +1,7 @@
 export function LearningVisual() {
   return (
     <div className="learning-visual" role="img" aria-label="A seven-night pattern becoming more personalized">
+      <div className="visual-topline"><span>YOUR SLEEP PATTERN</span><strong>NIGHT 1 → NIGHT 7</strong></div>
       <svg viewBox="0 0 620 330" aria-hidden="true">
         <defs>
           <linearGradient id="learningLine" x1="0" y1="0" x2="1" y2="0">
@@ -19,7 +20,7 @@ export function LearningVisual() {
         {[36, 127, 218, 309, 400, 491, 584].map((x, index) => <circle key={x} cx={x} cy={[229, 124, 145, 193, 147, 132, 130][index]} r="8" />)}
       </svg>
       <div className="night-labels"><span>N1</span><span>N2</span><span>N3</span><span>N4</span><span>N5</span><span>N6</span><span>N7</span></div>
-      <div className="learning-insight"><span>AFTER 7 NIGHTS</span><strong>More in sync</strong><small>Personalized to your rhythm</small></div>
+      <div className="learning-insight"><span>NIGHT AFTER NIGHT</span><strong>More in sync</strong><small>Somni adapts as it learns</small></div>
     </div>
   );
 }

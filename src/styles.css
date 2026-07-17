@@ -62,7 +62,7 @@ h1, h2, h3 { font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "
 .learning-visual { padding: 28px 30px; background: radial-gradient(circle at 35% 18%, rgba(59, 106, 180, .34), transparent 36%), linear-gradient(160deg, #10223d, #06101c 68%); }
 .visual-topline { display: flex; align-items: center; justify-content: space-between; color: #9ca7bd; font-size: 10px; letter-spacing: .13em; }
 .visual-topline strong { color: #d8ddeb; font-size: 10px; font-weight: 600; }
-.learning-visual svg { width: 100%; margin-top: 8px; overflow: visible; }
+.learning-visual svg { width: 100%; margin-top: 2px; overflow: visible; }
 .learning-grid { fill: none; stroke: rgba(255, 255, 255, .09); stroke-width: 1; }
 .learning-baseline { fill: none; stroke: rgba(255, 255, 255, .68); stroke-width: 4; }
 .learning-path { fill: none; stroke: url(#learningLine); stroke-linecap: round; stroke-width: 8; }
@@ -73,16 +73,21 @@ h1, h2, h3 { font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "
 .learning-insight strong { margin-top: 5px; color: #61c9ff; font-size: 24px; font-weight: 600; letter-spacing: -.025em; }
 .learning-insight small { margin-top: 3px; color: #aeb9cc; font-size: 11px; }
 
-.rhythm-visual { padding: 28px 30px; background: radial-gradient(circle at 16% 18%, rgba(113, 54, 65, .3), transparent 36%), linear-gradient(150deg, #24152d, #08080d 68%); }
-.rhythm-orbit { position: relative; height: 290px; margin-top: 35px; }
-.rhythm-track { position: absolute; top: 50%; right: 8%; left: 8%; height: 3px; border-radius: 99px; background: linear-gradient(90deg, #8d6fff, #5fbcff 49%, #f5bd78); box-shadow: 0 0 26px rgba(120, 120, 255, .46); }
-.cue { position: absolute; top: 50%; display: grid; width: 108px; transform: translate(-50%, -50%); place-items: center; text-align: center; }
-.cue--sound { left: 12%; }
-.cue--light { left: 50%; }
-.cue--scent { left: 88%; }
-.cue-icon { display: grid; width: 70px; height: 70px; margin-bottom: 15px; place-items: center; border: 1px solid rgba(255, 255, 255, .22); border-radius: 50%; color: #fff; background: rgba(255, 255, 255, .08); box-shadow: 0 0 32px rgba(127, 105, 255, .25); font-size: 34px; backdrop-filter: blur(12px); }
-.cue strong { font-size: 13px; font-weight: 600; }
-.cue small { margin-top: 3px; color: #9c98a4; font-size: 10px; }
+.rhythm-visual { padding: 28px 30px; background: radial-gradient(circle at 14% 13%, rgba(123, 66, 88, .34), transparent 38%), radial-gradient(circle at 88% 84%, rgba(190, 111, 64, .18), transparent 38%), linear-gradient(155deg, #211425, #09090d 68%); }
+.rhythm-chart { position: relative; margin-top: 22px; padding: 5px 0 38px; }
+.rhythm-chart svg { display: block; width: 100%; overflow: visible; }
+.rhythm-grid, .rhythm-phase { fill: none; stroke: rgba(255, 255, 255, .075); stroke-width: 1; }
+.rhythm-phase { stroke-dasharray: 4 8; }
+.rhythm-line { fill: none; stroke-linecap: round; stroke-width: 8; }
+.rhythm-line--sound { stroke: url(#soundLine); }
+.rhythm-line--light { stroke: url(#lightLine); }
+.rhythm-line--scent { stroke: url(#scentLine); }
+.rhythm-legend { position: absolute; right: 0; bottom: 4px; left: 0; display: flex; justify-content: center; gap: 18px; color: #bbb4bd; font-size: 10px; }
+.rhythm-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend-dot { width: 7px; height: 7px; border-radius: 50%; }
+.legend-dot--sound { background: #9180ff; box-shadow: 0 0 10px rgba(145, 128, 255, .7); }
+.legend-dot--light { background: #e8a66f; box-shadow: 0 0 10px rgba(232, 166, 111, .7); }
+.legend-dot--scent { background: #65c8bd; box-shadow: 0 0 10px rgba(101, 200, 189, .7); }
 .rhythm-footer { display: flex; justify-content: space-between; color: #8d8991; font-size: 10px; }
 
 .carousel-controls { display: flex; align-items: center; justify-content: flex-end; margin: 8px 0 0; padding: 0 var(--gutter); }
@@ -150,9 +155,8 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
   .learning-visual svg { margin-top: 3px; }
   .learning-insight { right: 17px; bottom: 17px; left: 17px; padding: 14px 16px; border-radius: 15px; }
   .learning-insight strong { font-size: 21px; }
-  .rhythm-orbit { height: 190px; margin-top: 18px; }
-  .cue { width: 83px; }
-  .cue-icon { width: 52px; height: 52px; margin-bottom: 11px; font-size: 25px; }
+  .rhythm-chart { margin-top: 15px; padding-bottom: 32px; }
+  .rhythm-legend { gap: 12px; }
   .carousel-controls { margin-top: 7px; padding: 0 var(--gutter); }
   .arrow-controls button { width: 44px; height: 44px; }
   .final-cta { padding: 88px 20px 106px; }

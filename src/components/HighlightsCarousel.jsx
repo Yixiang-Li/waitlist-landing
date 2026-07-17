@@ -5,20 +5,20 @@ import { RhythmVisual } from "./RhythmVisual";
 const slides = [
   {
     id: "learns",
-    title: "Gets to know your nights.",
-    body: "Somni learns your patterns over time, then adapts to help you settle, stay asleep and wake well.",
+    title: "Learns night after night.",
+    body: "Over time, Somni adapts more closely to what helps you settle, stay asleep and wake well.",
     visual: "learning",
   },
   {
     id: "rhythm",
-    title: "Sound. Light. Scent. In sync.",
-    body: "Three cues move together from wind-down to wake-up, adjusting as your night unfolds.",
+    title: "Your whole night, in sync.",
+    body: "Sound, light and scent work together from wind-down to wake-up, adapting as your night unfolds.",
     visual: "rhythm",
   },
   {
     id: "quiet",
-    title: "All the intelligence. None of the ritual.",
-    body: "No watch to wear. No nightly app routine. Somni works quietly from your bedside while you sleep.",
+    title: "Nothing to manage.",
+    body: "No wearables. No app rituals. Somni quietly cares for you from your bedside — even while you sleep.",
     visual: "photo",
   },
 ];
