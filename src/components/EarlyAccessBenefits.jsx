@@ -18,7 +18,6 @@ export function EarlyAccessBenefits() {
     <div className="early-benefits" aria-labelledby="early-benefits-title">
       <div className="early-access-panel">
         <div className="early-copy">
-          <p className="section-kicker">EARLY ACCESS</p>
           <h2 id="early-benefits-title">See it first.<br />Shape what’s next.</h2>
           <p>Join before launch for a closer look at Somni — and a chance to help make it better.</p>
         </div>

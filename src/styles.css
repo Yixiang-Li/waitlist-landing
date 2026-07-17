@@ -93,7 +93,7 @@ h1, h2, h3 { font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "
 
 .final-cta { padding: 124px 24px 138px; color: #f5f5f7; background: radial-gradient(circle at 50% 14%, rgba(132, 67, 42, .3), transparent 31%), radial-gradient(circle at 15% 78%, rgba(83, 48, 34, .22), transparent 33%), linear-gradient(180deg, #130b08 0%, #080605 100%); }
 .early-benefits { width: min(100%, var(--max)); margin: 0 auto; }
-.early-access-panel { position: relative; display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(340px, .92fr); gap: 76px; overflow: hidden; padding: 72px 68px; border: 1px solid rgba(240, 211, 186, .13); border-radius: 38px; background: linear-gradient(135deg, rgba(255, 255, 255, .07), rgba(255, 255, 255, .025) 52%, rgba(113, 55, 34, .14)); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .04), 0 40px 100px rgba(0, 0, 0, .2); }
+.early-access-panel { position: relative; display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(340px, .92fr); gap: 76px; overflow: hidden; padding: 64px 68px; border: 1px solid rgba(240, 211, 186, .13); border-radius: 38px; background: linear-gradient(135deg, rgba(255, 255, 255, .07), rgba(255, 255, 255, .025) 52%, rgba(113, 55, 34, .14)); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .04), 0 40px 100px rgba(0, 0, 0, .2); }
 .early-access-panel::before { position: absolute; top: -220px; right: -150px; width: 520px; height: 520px; border-radius: 50%; background: radial-gradient(circle, rgba(241, 184, 139, .28) 0%, rgba(178, 91, 51, .1) 35%, transparent 68%); content: ""; filter: blur(5px); pointer-events: none; }
 .early-copy, .benefit-list { position: relative; z-index: 1; }
 .early-copy h2 { max-width: 580px; font-size: clamp(52px, 5.7vw, 76px); letter-spacing: -.046em; line-height: .98; }
@@ -104,10 +104,10 @@ h1, h2, h3 { font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "
 .benefit-item strong { display: block; color: #f5f5f7; font-size: 17px; font-weight: 600; letter-spacing: -.012em; }
 .benefit-item p { margin: 7px 0 0; color: #a99b92; font-size: 14px; line-height: 1.48; }
 .final-inner { display: flex; width: min(100%, 900px); min-height: 78svh; flex-direction: column; align-items: center; justify-content: flex-start; margin: 64px auto 0; padding-top: 96px; text-align: center; scroll-margin-top: 32px; }
-.final-cta .section-kicker { color: #9f8d81; }
-.waitlist-headline { margin: 0 0 46px; font-size: clamp(52px, 6.4vw, 82px) !important; letter-spacing: -.042em !important; line-height: .99 !important; }
-.waitlist-headline > span { display: block; }
-.waitlist-number { position: relative; width: max-content; margin: 4px auto 10px; color: #edbf98; font-size: clamp(104px, 14vw, 176px); font-variant-numeric: tabular-nums; letter-spacing: -.055em; line-height: .86; text-shadow: 0 0 50px rgba(209, 131, 77, .14); }
+.final-cta .waitlist-headline { display: flex; flex-direction: column; align-items: center; gap: 8px; margin: 0 0 48px; font-size: clamp(52px, 6.4vw, 82px); letter-spacing: -.036em; line-height: 1; }
+.waitlist-lead { line-height: 1; }
+.waitlist-tail { max-width: 820px; line-height: 1.02; }
+.waitlist-number { position: relative; width: max-content; margin: 0 auto; color: #edbf98; font-size: clamp(104px, 14vw, 176px); font-variant-numeric: tabular-nums; letter-spacing: -.045em; line-height: 1; text-shadow: 0 0 50px rgba(209, 131, 77, .14); }
 .waitlist-number > span:first-child { display: block; }
 .waitlist-number.is-counting > span:first-child { animation: count-rise 1.8s cubic-bezier(.2, .75, .25, 1) both; will-change: opacity, transform; }
 .waitlist-form { display: flex; width: min(100%, 550px); gap: 8px; margin: 0 auto; }
@@ -117,7 +117,7 @@ h1, h2, h3 { font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "
 .waitlist-form button { display: inline-flex; min-height: 56px; align-items: center; justify-content: center; gap: 5px; padding: 0 22px; border: 0; border-radius: 999px; color: var(--accent-ink); background: var(--accent); cursor: pointer; font-weight: 600; white-space: nowrap; }
 .waitlist-form button:hover { background: var(--accent-hover); }
 .waitlist-form button span { font-size: 22px; line-height: 0; }
-.cta-meta { margin-top: 15px; color: #8f8179; font-size: 11px; }
+.cta-meta { margin-top: 16px; color: #8f8179; font-size: 12px; line-height: 1.4; }
 .success-message { display: flex; width: min(100%, 550px); min-height: 58px; align-items: center; justify-content: center; gap: 12px; margin: 0 auto; border: 1px solid rgba(240, 211, 186, .2); border-radius: 999px; color: #f5f5f7; background: rgba(255, 255, 255, .07); }
 .success-message > span { display: grid; width: 28px; height: 28px; place-items: center; border-radius: 50%; color: #fff; background: #34c759; }
 .success-message div { text-align: left; }
@@ -156,7 +156,7 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
   .carousel-controls { margin-top: 7px; padding: 0 var(--gutter); }
   .arrow-controls button { width: 44px; height: 44px; }
   .final-cta { padding: 88px 20px 106px; }
-  .early-access-panel { grid-template-columns: 1fr; gap: 42px; padding: 42px 24px 36px; border-radius: 28px; }
+  .early-access-panel { grid-template-columns: 1fr; gap: 42px; padding: 36px 24px; border-radius: 28px; }
   .early-access-panel::before { top: -210px; right: -220px; width: 460px; height: 460px; }
   .early-copy h2 { font-size: 46px; }
   .early-copy > p:last-child { margin-top: 21px; font-size: 15px; }
@@ -164,12 +164,24 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
   .benefit-item strong { font-size: 16px; }
   .benefit-item p { margin-top: 6px; font-size: 13px; }
   .final-inner { min-height: 82svh; margin-top: 44px; padding-top: 72px; scroll-margin-top: 16px; }
-  .waitlist-headline { margin-bottom: 38px; font-size: 47px !important; }
-  .waitlist-headline > .waitlist-number { display: block; margin: 7px auto 15px; font-size: clamp(92px, 26vw, 112px); }
+  .final-cta .waitlist-headline { gap: 5px; margin-bottom: 40px; font-size: 44px; letter-spacing: -.032em; }
+  .waitlist-number { font-size: clamp(88px, 27vw, 106px); }
+  .waitlist-tail { max-width: 320px; line-height: 1.04; }
   .waitlist-form { flex-direction: column; }
   .waitlist-form input, .waitlist-form button { width: 100%; flex: none; }
   .waitlist-form input { height: 56px; }
   .cta-meta { flex-direction: column; gap: 5px; }
+}
+
+@media (max-width: 360px) {
+  :root { --gutter: 16px; }
+  .final-cta { padding-right: 16px; padding-left: 16px; }
+  .early-access-panel { padding: 32px 20px 30px; border-radius: 24px; }
+  .early-copy h2 { font-size: 42px; line-height: 1; }
+  .final-inner { padding-top: 64px; }
+  .final-cta .waitlist-headline { gap: 4px; margin-bottom: 36px; font-size: 42px; }
+  .waitlist-number { font-size: 96px; }
+  .waitlist-tail { max-width: 286px; }
 }
 
 @keyframes count-rise {
